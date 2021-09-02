@@ -13,7 +13,7 @@ function App() {
       <main>
         <Switch>
           <Route exact path="/" component={MyLogs} />
-          {/* <Route exact path="/quotes" component={MyLogs} /> */}
+          {<Route exact path="/quotes" component={MyLogs} />}
           {/* <Route exact path="/comments" component={Comments} /> */}
         </Switch>
       </main>

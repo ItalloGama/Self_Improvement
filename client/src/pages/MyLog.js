@@ -2,30 +2,34 @@ import React, {useState, useEffect} from 'react'
 import QuoteCard from '../components/QuoteCard'
 import axios from 'axios'
 const MyLog = () => {
-    const [logs, setLogs] = useState([])
+    const [quotes, setQuotes] = useState([])
     
-    const getLogs = async () => {
+    const getQuotes = async () => {
         const res = await axios.get(
             `http://localhost:3001/api/quotes`
         )
-        setLogs(res.data.quotes)
+        setQuotes(res.data.quotes)
         }
 
         useEffect(() => {
-            getLogs()
+            getQuotes()
         }, [])
     
         return (
+            
         <div>
             <h2>quotes</h2>
-            {logs.map((log) => {
+            {quotes.map(quote => 
+                (
                 <QuoteCard 
-                key={log._id}
-                name={log.name}
-                author={log.author}
-                quote={log.quote}
+                key={quote._id}
+                name={quote.name}
+                author={quote.author}
+                quote={quote.quote}
                 />
-            })}
+                )
+            )}
+            
         </div>
     )}
 
