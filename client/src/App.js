@@ -1,6 +1,6 @@
 import { Route, Switch } from 'react-router-dom';
 import React from 'react';
-//import Comments from './pages/Comments'
+import Comments from './pages/Comments'
 import Home from './pages/Home'
 import Nav from './components/Nav'
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <main>
         <Switch>
           <Route exact path="/" component={Home} />
-          {/* <Route exact path="/quotes" component={MyLogs} /> */}
+          <Route exact path="/comments" component={Comments} />
           {/* <Route exact path="/comments" component={Comments} /> */}
         </Switch>
       </main>
@@ -22,13 +22,4 @@ function App() {
 
 export default App
 
-  // useEffect(() => {
-  //   async function getQuotes() {
-  //     let res = await axios.get(`${BASE_URL}`)
-  //     console.log(res.data)
-  //     setCities(res.data)
-  //   }
-  //   getQuotes()
-  //   return <div></div>
-  // }, [])
-  
+ 

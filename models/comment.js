@@ -5,7 +5,7 @@ const Comment = new Schema(
     {
         name: { type: String, required: true },
         comment: { type: String, required: true },
-        quote: [{ type: Schema.Types.ObjectId, ref: 'quotes' }]
+        
     },
     { timestamps: true },
 )
