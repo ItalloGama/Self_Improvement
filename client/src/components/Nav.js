@@ -7,8 +7,8 @@ function Nav() {
             <h4>My Quotes </h4>
         <div>
             <NavLink to="/">Home</NavLink>
-            {/* <NavLink to="/quotes">myLog</NavLink> */}
-            <NavLink to="/comments">myComments</NavLink>
+            <NavLink to="/quotes">myLog</NavLink>  
+            {/* <NavLink to="/comments">myComments</NavLink> */}
         </div>
         </nav>
     )
