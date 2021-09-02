@@ -1,13 +1,13 @@
 import React from 'react'
 
 function QuoteCard(props) {
-    const { quote } = props
+    
     return (
-        <div className="Quote-card" onClick={() => props.showQuote(city)}>
+        <div className="Quote-card">
             <div>
-                <h3>{quote.name}</h3>
-                <h3>{quote.author}</h3>
-                <p>{quote.quote}</p>
+                <h3>{props.name}</h3>
+                <h3>{props.author}</h3>
+                <p>{props.quote}</p>
             </div>
         </div>
     )

@@ -8,7 +8,7 @@ router.post('/quotes', controllers.createQuote)
 
 router.get('/quotes', controllers.getAllQuotes)
 
-router.get('/quotes/:id', controllers.getQuoteById)
+// router.get('/quotes/:id', controllers.getQuoteById)
 
 router.delete('/quotes/:id', controllers.deleteQuote)
 
