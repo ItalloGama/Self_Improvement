@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useState, useEffect } from 'react'
 import { Form } from "react-bootstrap";
 import QuoteCard from "../components/QuoteCard";
-import BASE_URL from "../../globle";
+
 
 const Home = () => {
     const [quote, setQuote] = useState({
@@ -22,7 +22,7 @@ const Home = () => {
         const res = await axios.post(
             process.env.NODE_ENV === 'production'
                 ? `${window.location.origin}/api/quotes`
-                : `${BASE_URL}/api/quotes`,
+                : `http://localhost:3001/api/quotes`,
             quote
         )
         return res.data
@@ -33,7 +33,7 @@ const Home = () => {
 
     const getQuotes = async () => {
         const res = await axios.get(
-            `${BASE_URL}/api/quotes`
+            `http://localhost:3001/api/quotes`
         )
         setQuotes(res.data.quotes)
         }

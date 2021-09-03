@@ -1,11 +1,11 @@
 import React from 'react'
 import axios from 'axios'
 import { Card } from "react-bootstrap";
-import BASE_URL from "../../globle";
+
 function CommentCard(comment) {
         
         const deleteComment = () => {
-            axios.delete(`${BASE_URL}/api/comments/${comment.id}`)
+            axios.delete(`http://localhost:3001/api/comments/${comment.id}`)
             window.location.reload()
     }
     return (
