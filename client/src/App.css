@@ -1,5 +1,25 @@
-*{
+/* *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+} */
+.cards {
+    display:flex;
+    flex-wrap:wrap;
+    padding:1rem;
+    justify-content: center;
+    
+    
+}
+.letterForm {
+    display:flex;
+    flex-wrap:wrap;
+    padding:1rem;
+    justify-content: center;
+}
+.navBar {
+    display:flex;
+    flex-wrap:nowrap;
+    
+    justify-content: center;
 }

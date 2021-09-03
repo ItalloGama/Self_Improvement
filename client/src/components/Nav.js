@@ -2,9 +2,9 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 function Nav() {
     return (
-        <nav className="navbar">
+        <nav>
             <h4>My Quotes </h4>
-        <div>
+        <div className="navbar">
             <div>
                 <NavLink to="/">Home</NavLink>
             </div>

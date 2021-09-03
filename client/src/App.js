@@ -3,6 +3,7 @@ import React from 'react';
 import Comments from './pages/Comments'
 import Home from './pages/Home'
 import Nav from './components/Nav'
+import './App.css'
 function App() {
 
   
