@@ -1,10 +1,10 @@
 :root {
     --gradient: linear-gradient(45deg,
-        rgb(128, 219, 255),
-        rgb(74, 200, 250), 
-        rgb(32, 180, 238),
-        rgb(18, 152, 206), 
-        rgb(0, 116, 161)
+        rgb(255, 254, 246),
+        rgb(255, 254, 236), 
+        rgb(255, 253, 232),
+        rgb(252, 249, 214), 
+        rgb(255, 252, 204)
     );
 }
 .cards {
@@ -30,7 +30,7 @@
 	
 }
 body{
-    background-color: rgb(107, 198, 204);
+    background-color: rgb(255, 254, 236);
     min-height: 100vh;
     background-image: var(--gradient);
     background-size: 300%;

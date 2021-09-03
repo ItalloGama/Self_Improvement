@@ -21,3 +21,5 @@ function QuoteCard(quotes) {
     )
 }
 export default QuoteCard
+
+// heroku config:set MONGODB_URI=mongodb+srv://itallo4:itallo1994@cluster0.gqkt0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
