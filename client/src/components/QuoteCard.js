@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from 'axios'
-
+import { Card } from "react-bootstrap";
 function QuoteCard(quotes) {
         
         const deleteQuote = () => {
@@ -8,14 +8,14 @@ function QuoteCard(quotes) {
             window.location.reload()
     }
     return (
-        <div className="Quote-card">
-            <div>
-                <h3>{quotes.name}</h3>
-                <h3>{quotes.author}</h3>
-                <p>{quotes.quote}</p>    
+        <Card style={{ width: '18rem' }}>
+            <Card.Body>
+                <Card.Title>{quotes.name}</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">{quotes.author}</Card.Subtitle>
+                <Card.Text>{quotes.quote}</Card.Text>   
                 <button onClick={deleteQuote}>delete</button>
-            </div>
-        </div>
+            </Card.Body>
+        </Card>
     )
 }
 export default QuoteCard

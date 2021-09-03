@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState, useEffect } from 'react'
 import Comment from "../components/CommentSection";
-
+import { Form } from "react-bootstrap";
 
 const Home = () => {
     const [comment, setComment] = useState({
@@ -52,19 +52,26 @@ return (
     <div> 
         <div>Create Comment</div>
         <div>
-            <form onSubmit={handleSubmit} id='post-comment'>
-            <input
+            <Form onSubmit={handleSubmit} id='post-comment'>
+            <Form.Group className="mb-3" >
+            <Form.Label>Name</Form.Label>
+            <Form.Control
             name="name"
             onChange={(e) => {
             handleChange(e)
             }}/>
-            <input
+            </Form.Group >
+            <Form.Group className="mb-3">
+            <Form.Label>Quote</Form.Label>
+            <Form.Control
             name="comment"
             onChange={(e) => {
             handleChange(e)
             }}/>
+            
             <button type='submit'>Submit</button>
-            </form>
+            </Form.Group>
+            </Form>
         <div className="commentForm">
         {comments.map((comment => {
             

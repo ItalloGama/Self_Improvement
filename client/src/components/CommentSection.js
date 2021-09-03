@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from 'axios'
-
+import { Card } from "react-bootstrap";
 function CommentCard(comment) {
         
         const deleteComment = () => {
@@ -8,13 +8,13 @@ function CommentCard(comment) {
             window.location.reload()
     }
     return (
-        <div className="Quote-card">
-            <div>
-                <h3>{comment.name}</h3>
-                <p>{comment.comment}</p>    
+        <Card style={{ width: '18rem' }}>
+            <Card.Body>
+            <Card.Title>{comment.name}</Card.Title>
+            <Card.Text>{comment.comment}</Card.Text>    
                 <button onClick={deleteComment}>delete</button>
-            </div>
-        </div>
+                </Card.Body>
+        </Card>
     )
 }
 export default CommentCard
