@@ -55,48 +55,46 @@ return (
         <h2>Create Quote</h2>
         <div>
             <Form onSubmit={handleSubmit} id='post'>
-            <Form.Group className="mb-3" >
-            <Form.Label>Name</Form.Label>
-            <Form.Control
-            name="name"
-            onChange={(e) => {
-            handleChange(e)
-            }}/>
-            </Form.Group >
-            <Form.Group className="mb-3" >
-            <Form.Label>Author</Form.Label>
-            <Form.Control
-            name="author"
-            onChange={(e) => {
-            handleChange(e)
-            }}/>
-            </Form.Group>
-            <Form.Group className="mb-3">
-            <Form.Label>Quote</Form.Label>
-            <Form.Control
-            name="quote"
-            onChange={(e) => {
-            handleChange(e)
-            }}/>
-            
-            <button type='submit'>Submit</button>
-            </Form.Group>
+                <Form.Group className="mb-3" >
+                    <Form.Label>Name</Form.Label>
+                    <Form.Control
+                        name="name"
+                        onChange={(e) => {
+                        handleChange(e)
+                        }}/>
+                </Form.Group >
+                <Form.Group className="mb-3" >
+                    <Form.Label>Author</Form.Label>
+                    <Form.Control
+                        name="author"
+                        onChange={(e) => {
+                        handleChange(e)
+                        }}/>
+                </Form.Group>
+                <Form.Group className="mb-3">
+                    <Form.Label>Quote</Form.Label>
+                    <Form.Control
+                        name="quote"
+                        onChange={(e) => {
+                        handleChange(e)
+                        }}/>
+                    <button type='submit'>Submit</button>
+                </Form.Group>
             </Form>
-        <div className="letterForm">
-        {quotes.map((quote => {
-            
-            return  (
-                <QuoteCard 
-                key={quote._id}
-                id={quote._id}
-                name={quote.name}
-                author={quote.author}
-                quote={quote.quote}
-                />
-                )
-                }
-            ))
-                }
+        <div className="quoteForm">
+            {quotes.map((quote => {
+                return  (
+                    <QuoteCard 
+                        key={quote._id}
+                        id={quote._id}
+                        name={quote.name}
+                        author={quote.author}
+                        quote={quote.quote}
+                        />
+                        )
+                    }
+                ))
+            }
         </div>
         </div>
     </div>
