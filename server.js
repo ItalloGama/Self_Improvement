@@ -4,7 +4,6 @@ const db = require('./db');
 const bodyParser = require ('body-parser');
 const logger = require ('morgan')
 const cors = require('cors')
-// require() imports and middleware here ^ ///////
 
 const PORT = process.env.PORT || 3001;
 
@@ -13,7 +12,6 @@ app.use(bodyParser.json());
 app.use(logger('dev'))
 app.use(cors())
 
-// app.use() middleware here ^ ///////////////////
 
 app.use('/api', routes);
 
