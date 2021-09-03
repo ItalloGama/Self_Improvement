@@ -9,7 +9,6 @@ function Nav() {
             <div>
                 <NavLink to="/">Home</NavLink>
             </div>
-            <br/>
             <div>
                 <NavLink to="/comments">Reflections</NavLink>  
             </div>

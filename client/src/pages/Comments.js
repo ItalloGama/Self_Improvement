@@ -53,44 +53,41 @@ return (
         <div>Create Comment</div>
         <div>
             <Form onSubmit={handleSubmit} id='post-comment'>
-            <Form.Group className="mb-3" >
-            <Form.Label>Name</Form.Label>
-            <Form.Control
-            name="name"
-            onChange={(e) => {
-            handleChange(e)
-            }}/>
-            </Form.Group >
-            <Form.Group className="mb-3">
-            <Form.Label>Quote</Form.Label>
-            <Form.Control
-            name="comment"
-            onChange={(e) => {
-            handleChange(e)
-            }}/>
-            
-            <button type='submit'>Submit</button>
-            </Form.Group>
+                <Form.Group className="mb-3" >
+                    <Form.Label>Name</Form.Label>
+                    <Form.Control
+                        name="name"
+                        onChange={(e) => {
+                        handleChange(e)
+                        }}/>
+                </Form.Group >
+                <Form.Group className="mb-3">
+                    <Form.Label>Quote</Form.Label>
+                    <Form.Control
+                        name="comment"
+                        onChange={(e) => {
+                        handleChange(e)
+                        }}/>
+                    <button type='submit'>Submit</button>
+                </Form.Group>
             </Form>
         <div className="commentForm">
-        {comments.map((comment => {
+            {comments.map((comment => {
             
-            return  (
-                <Comment
-                key={comment._id}
-                id={comment._id}
-                name={comment.name}
-                comment={comment.comment}
+                return  (
+                    <Comment
+                    key={comment._id}
+                    id={comment._id}
+                    name={comment.name}
+                    comment={comment.comment}
                 />
                 )
                 }
             ))
-                }
+        }
         </div>
         </div>
     </div>
-
-
 )
 }
 export default Home

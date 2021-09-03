@@ -8,13 +8,15 @@ function CommentCard(comment) {
             window.location.reload()
     }
     return (
-        <Card style={{ width: '18rem' }}>
+    <div className='cards'>   
+        <Card border="primary" style={{ width: '18rem' }}>
             <Card.Body>
                 <Card.Title>{comment.name}</Card.Title>
                 <Card.Text>{comment.comment}</Card.Text>    
                 <button onClick={deleteComment}>delete</button>
             </Card.Body>
         </Card>
+    </div>    
     )
 }
 export default CommentCard
