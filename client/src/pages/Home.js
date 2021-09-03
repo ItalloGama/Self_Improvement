@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState, useEffect } from 'react'
+import { Form } from "react-bootstrap";
 import QuoteCard from "../components/QuoteCard";
 
 
@@ -51,26 +52,36 @@ const Home = () => {
 
 return (
     <div> 
-        <div>Create Quote</div>
+        <h2>Create Quote</h2>
         <div>
-            <form onSubmit={handleSubmit} id='post'>
-            <input
+            <Form onSubmit={handleSubmit} id='post'>
+            <Form.Group className="mb-3" >
+            <Form.Label>Name</Form.Label>
+            <Form.Control
             name="name"
             onChange={(e) => {
             handleChange(e)
             }}/>
-            <input
+            </Form.Group >
+            <Form.Group className="mb-3" >
+            <Form.Label>Author</Form.Label>
+            <Form.Control
             name="author"
             onChange={(e) => {
             handleChange(e)
             }}/>
-            <input
+            </Form.Group>
+            <Form.Group className="mb-3">
+            <Form.Label>Quote</Form.Label>
+            <Form.Control
             name="quote"
             onChange={(e) => {
             handleChange(e)
             }}/>
+            
             <button type='submit'>Submit</button>
-            </form>
+            </Form.Group>
+            </Form>
         <div className="letterForm">
         {quotes.map((quote => {
             
