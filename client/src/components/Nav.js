@@ -4,13 +4,16 @@ function Nav() {
     return (
         <nav>
             <h4>My Quotes </h4>
-        <div className="navbar">
+        <div className="navBar">
+            <br/>
             <div>
                 <NavLink to="/">Home</NavLink>
             </div>
+            <br/>
             <div>
                 <NavLink to="/comments">Reflections</NavLink>  
             </div>
+            <br/>
         </div>
         </nav>
     )
