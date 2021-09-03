@@ -4,7 +4,7 @@ import { Card } from "react-bootstrap";
 function CommentCard(comment) {
         
         const deleteComment = () => {
-            axios.delete(`http://localhost:3001/api/comments/${comment.id}`)
+            axios.delete(`${BASE_URL}/api/comments/${comment.id}`)
             window.location.reload()
     }
     return (

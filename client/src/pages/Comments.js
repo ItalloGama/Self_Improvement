@@ -20,7 +20,7 @@ const Home = () => {
         const res = await axios.post(
             process.env.NODE_ENV === 'production'
                 ? `${window.location.origin}/api/comments`
-                : 'http://localhost:3001/api/comments',
+                : `${BASE_URL}/api/comments`,
             comment
         )
         return res.data
@@ -31,7 +31,7 @@ const Home = () => {
 
     const getQuotes = async () => {
         const res = await axios.get(
-            `http://localhost:3001/api/comments`
+            `${BASE_URL}/api/comments`
         )
         setComments(res.data.comment)
         }

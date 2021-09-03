@@ -4,7 +4,7 @@ import { Card } from "react-bootstrap";
 function QuoteCard(quotes) {
     
         const deleteQuote = () => {
-            axios.delete(`http://localhost:3001/api/quotes/${quotes.id}`)
+            axios.delete(`${BASE_URL}/api/quotes/${quotes.id}`)
             window.location.reload()
     }
     return (
