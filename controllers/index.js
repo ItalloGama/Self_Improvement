@@ -28,7 +28,7 @@ const getQuoteById = async (req, res) => {
         if (quote) {
             return res.status(200).json({ quote });
         }
-        return res.status(404).send('Requested Quote not in Database.');
+        return res.status(404).send('Requested Quote not saved.');
     } catch (error) {
         return res.status(500).send(error.message);
     }
