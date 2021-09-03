@@ -1,5 +1,6 @@
 const Quote = require('../models/quote');
 const Comment = require('../models/comment')
+
 const createQuote = async (req, res) => {
     try {
         const quote = await new Quote(req.body)
@@ -47,25 +48,6 @@ const deleteQuote = async (req, res) => {
     }
 }
 
-// const updateQuote = async (req, res) => {
-//     try {
-//         const { id } = req.params;
-//         await Quote.findByIdAndUpdate(id, req.body, { new: true }, (err, quote) => {
-//             if (err) {
-//                 res.status(500).send(err);
-//             }
-//             if (!quote) {
-//                 res.status(500).send('quote not found!');
-//             }
-//             return res.status(200).json(quote);
-//         })
-//     } catch (error) {
-//         return res.status(500).send(error.message);
-//     }
-// }
-
-//comments
-
 const createComment = async (req, res) => {
     try {
         const comment = await new Comment(req.body)
@@ -106,6 +88,5 @@ module.exports = {
     deleteQuote,
     createComment,
     getAllComments,
-    deleteComment,
-    // updateQuote
+    deleteComment
 }
