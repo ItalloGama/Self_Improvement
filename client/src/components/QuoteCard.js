@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import { Card } from "react-bootstrap";
+import BASE_URL from "../../globle";
 function QuoteCard(quotes) {
     
         const deleteQuote = () => {

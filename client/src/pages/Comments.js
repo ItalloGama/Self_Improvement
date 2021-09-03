@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useState, useEffect } from 'react'
 import Comment from "../components/CommentSection";
 import { Form } from "react-bootstrap";
+import BASE_URL from "../../globle";
 
 const Home = () => {
     const [comment, setComment] = useState({

@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useState, useEffect } from 'react'
 import { Form } from "react-bootstrap";
 import QuoteCard from "../components/QuoteCard";
-import BASE_URL from '../globle'
+import BASE_URL from "../../globle";
 
 const Home = () => {
     const [quote, setQuote] = useState({
