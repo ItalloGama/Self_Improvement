@@ -14,7 +14,6 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/comments" component={Comments} />
-          {/* <Route exact path="/comments" component={Comments} /> */}
         </Switch>
       </main>
     </div>
