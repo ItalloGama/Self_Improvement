@@ -1,3 +1,12 @@
+:root {
+    --gradient: linear-gradient(45deg,
+        rgb(128, 219, 255),
+        rgb(74, 200, 250), 
+        rgb(32, 180, 238),
+        rgb(18, 152, 206), 
+        rgb(0, 116, 161)
+    );
+}
 .cards {
     display:flex;
     flex-wrap:wrap;
@@ -19,4 +28,15 @@
 	justify-content: space-between;
 	align-items: center;
 	
+}
+body{
+    background-color: rgb(107, 198, 204);
+    min-height: 100vh;
+    background-image: var(--gradient);
+    background-size: 300%;
+    animation: newBackground 10s infinite alternate;
+}
+@keyframes newBackground {
+    0% {background-position: left;}
+    100%{background-position: right;}
 }
