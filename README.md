@@ -1,15 +1,15 @@
 # InspireMe
 
-## Date: 09/05/2021
+## Date: 09/03/2021
 
 ### By: Itallo Gama 
  
-[GitHub](https://github.com/ItalloGama/Self_Improvement) |  [LinkedIn](https://www.linkedin.com/feed/) |  [InspireMe](https://secret-springs-90221.herokuapp.com/)
+[GitHub](insertLink) |  [LinkedIn](insertLink)  |  [Inspire](insertLink)
 
 ***
 
 ### ***Description***
-Interact with quotes or pasages shared users. And keep a personal log of your thoughts, and accomplishments.
+Interact with quotes or pasages shared by other users. And keep a personal log of your thoughts, quotes, and accomplishments.
 
 ### ***Techmologies used***
 
@@ -41,4 +41,4 @@ Using the link to access the InspireMe site, and start working and bettering you
 
 ***credits***
 * [BootStrap](https://getbootstrap.com/)
-* [StackOverflow](https://stackoverflow.com/)
+* [StackOverflow](Link)
