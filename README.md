@@ -4,7 +4,7 @@
 
 ### By: Itallo Gama 
  
-[GitHub](insertLink) |  [LinkedIn](insertLink)  |  [Inspire](insertLink)
+[GitHub](https://github.com/ItalloGama/Self_Improvement) |  [LinkedIn](insertLink)  |  [Inspire](insertLink)
 
 ***
 
