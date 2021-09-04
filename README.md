@@ -41,4 +41,4 @@ Using the link to access the InspireMe site, and start working and bettering you
 
 ***credits***
 * [BootStrap](https://getbootstrap.com/)
-* [StackOverflow](Link)
+* [StackOverflow](https://stackoverflow.com/)
