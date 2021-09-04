@@ -4,7 +4,7 @@
 
 ### By: Itallo Gama 
  
-[GitHub](https://github.com/ItalloGama/Self_Improvement) |  [LinkedIn](https://www.linkedin.com/feed/)  |  [Inspire](insertLink)
+[GitHub](https://github.com/ItalloGama/Self_Improvement) |  [LinkedIn](https://www.linkedin.com/feed/)  |  [Inspire](https://secret-springs-90221.herokuapp.com/)
 
 ***
 
