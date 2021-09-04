@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 function Nav() {
     return (
         <nav>
-            <h4>My Quotes </h4>
+            <h4>Inspire me </h4>
         <div className="navBar">
             <br/>
             <div>
