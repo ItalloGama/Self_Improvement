@@ -21,6 +21,12 @@
     padding:1rem;
     justify-content: center;
 }
+.commentForm {
+    display:flex;
+    flex-wrap:wrap;
+    padding:1rem;
+    justify-content: center;
+}
 .navBar {
     display: flex;
 	flex-direction: row;
