@@ -1,5 +1,5 @@
 const BASE_URL =
 process.env.NODE_ENV === 'production'
     ? `${window.location.origin}/api`
-    : 'mongodb://127.0.0.1:27017/inspireDataBase'
+    : 'http://localhost:3001/api'
 export default BASE_URL

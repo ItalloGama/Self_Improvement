@@ -1,11 +1,11 @@
 import React from 'react'
 import axios from 'axios'
 import { Card } from "react-bootstrap";
-
+import BASE_URL from '../globle';
 function QuoteCard(quotes) {
     
         const deleteQuote = () => {
-            axios.delete(`http://localhost:3001/api/quotes/${quotes.id}`)
+            axios.delete(`${BASE_URL}/quotes/${quotes.id}`)
             window.location.reload()
     }
     return (

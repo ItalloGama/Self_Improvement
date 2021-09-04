@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useState, useEffect } from 'react'
 import Comment from "../components/CommentSection";
 import { Form } from "react-bootstrap";
-
+import BASE_URL from "../globle";
 
 const Home = () => {
     const [comment, setComment] = useState({
@@ -21,7 +21,7 @@ const Home = () => {
         const res = await axios.post(
             process.env.NODE_ENV === 'production'
                 ? `${window.location.origin}/api/comments`
-                : `http://localhost:3001/api/comments`,
+                : `${BASE_URL}/comments`,
             comment
         )
         return res.data
@@ -32,7 +32,7 @@ const Home = () => {
 
     const getQuotes = async () => {
         const res = await axios.get(
-            `http://localhost:3001/api/comments`
+            `${BASE_URL}/comments`
         )
         setComments(res.data.comment)
         }
